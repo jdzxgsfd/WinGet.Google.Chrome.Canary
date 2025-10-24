@@ -1,4 +1,4 @@
-name: ${{ github.repository }}AutomationWorkflow
+name: ${{ github.repository }}
 
 on:
   schedule:
