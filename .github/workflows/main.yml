@@ -120,7 +120,7 @@ jobs:
 
       # 步骤：计算文件哈希值（大写+无乱码）+ 生成hash.txt
       - name: 计算文件哈希值（大写+无乱码）并生成hash.txt
-        if: steps.check_tag.outputs.tag_exists == 'false'
+        if: steps.check_file.outputs.file_exists == 'true'
         shell: bash
         env:
           LC_ALL: en_US.UTF-8
